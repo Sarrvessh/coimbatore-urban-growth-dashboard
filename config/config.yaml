@@ -1,0 +1,29 @@
+project:
+  name: urban-growth-coimbatore
+  crs_geographic: EPSG:4326
+  crs_projected: EPSG:32643
+  cell_size_m: 100
+  cache: true
+study_area:
+  name: Coimbatore district, Tamil Nadu, India
+  boundary_url: https://www.geoboundaries.org/api/current/gbOpen/IND/ADM2/
+  city_centre_wgs84: [76.9558, 11.0168]
+imagery:
+  catalog: https://planetarycomputer.microsoft.com/api/stac/v1
+  years: [2010, 2015, 2020, 2025]
+  seasonal_months: [1, 2, 3, 12]
+  max_cloud_cover: 25
+  collections:
+    2010: landsat-c2-l2
+    2015: landsat-c2-l2
+    2020: landsat-c2-l2
+    2025: landsat-c2-l2
+model:
+  spatial_blocks: 5
+  random_state: 42
+  prediction_year: 2030
+  high_probability_threshold: 0.6
+quality_control:
+  lulc_qc_passed: false
+  ml_paused: true
+  reason: ESA CCI 2010/2015/2020 layers pass coverage QC; Esri 2023 is rejected for temporal change because its resolution/class definition creates a non-comparable built-up discontinuity.

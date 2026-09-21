@@ -1,0 +1,7 @@
+<!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
+<qgis version="3.34" projectname="Coimbatore Urban Growth" saveUser="0">
+ <layer-tree-group name="Coimbatore Urban Growth" expanded="1">
+  <layer-tree-group name="01_BOUNDARY"/><layer-tree-group name="02_SATELLITE"/><layer-tree-group name="03_LULC"/><layer-tree-group name="04_TRANSPORT"/><layer-tree-group name="05_ENVIRONMENT"/><layer-tree-group name="06_SOCIOECONOMIC"/><layer-tree-group name="07_FEATURES"/><layer-tree-group name="08_URBAN_CHANGE"/><layer-tree-group name="09_PREDICTIONS"/>
+ </layer-tree-group>
+ <properties><SpatialRefSys><ProjectCrs><spatialrefsys nativeFormat="Wkt"><authid>EPSG:32643</authid><description>WGS 84 / UTM zone 43N</description></spatialrefsys></ProjectCrs></SpatialRefSys></properties>
+</qgis>

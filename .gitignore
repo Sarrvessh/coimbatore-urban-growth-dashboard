@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+*.py[cod]
+.env
+.env.*
+frontend/node_modules/
+frontend/dist/
+.streamlit/secrets.toml
+data/raw/*
+data/interim/*
+data/processed/*
+!data/**/.gitkeep
+models/*.joblib
+outputs/**
+!outputs/**/.gitkeep
